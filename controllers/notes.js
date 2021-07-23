@@ -64,6 +64,17 @@ exports.updateNote = (req, res) => {
     });
 };
 
+exports.getPreviousInfo = (req, res) => {
+  const noteId = req.noteId;
+  client.query(`SELECT * FROM notes WHERE noteid = '${noteId}'`).then((result) => {
+      res.status(200).send(result.rows);
+  }).catch((err) => {
+      if(err){
+          res.status(500).json({ message :  "New Error"});
+      }
+  });
+};
+
 exports.deleteNoteId = (req, res) => {
   const noteId = req.params.noteId;
   client
