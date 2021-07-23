@@ -1,5 +1,5 @@
 {
-    "name": "authentication",
+    "name": "backend-notetaker",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -8,13 +8,13 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/himavanth2810/Authentication.git"
+        "url": "git+https://github.com/himavanth2810/Backend-Notetaker.git"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/himavanth2810/Authentication/issues"
+        "url": "https://github.com/himavanth2810/Backend-Notetaker/issues"
     },
     "dependencies": {
         "bcrypt": "^5.0.1",
